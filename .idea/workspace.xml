@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2b7ee922-6e06-40ab-9367-53654da7df96" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/SentimentAnalytic.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NIO_cleaned.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NIO_original.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NIO_raw.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SentimentAnalytic.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SharkDetector-97187f6c7dfe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client_handler/client_handler.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env_helper.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nlp_analytics.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentiment_analytic/sentiment_analytic.pb.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentiment_analytic/sentiment_analytic.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentiment_analytic/sentiment_analytic_grpc.pb.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shakespeare.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/text_processing.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/text_processing_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SharkDetectorGrpcClient/.idea/SharkDetectorGrpcClient.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SharkDetectorGrpcClient/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SharkDetectorGrpcClient/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SharkDetectorGrpcClient/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SharkDetectorGrpcClient/client_handler/sentiment_analytic_client.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../flink/quotemovement-monitoring/quotemovement-monitoring/src/main/java/org/sharkdetector/flink/util/Priority.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../web_application/.idea/web_application.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../web_application/backend/.idea/backend.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../web_application/backend/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../web_application/sharkdetector/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../web_application/sharkdetector/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../web_application/sharkdetector/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../web_application/sharkdetector/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../web_application/sharkdetector/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../web_application/sharkdetector/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../web_application/sharkdetector/public/logo192.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../web_application/sharkdetector/public/logo512.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../web_application/sharkdetector/public/manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../web_application/sharkdetector/public/robots.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../web_application/sharkdetector/src/App.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../web_application/sharkdetector/src/App.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../web_application/sharkdetector/src/App.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../web_application/sharkdetector/src/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../web_application/sharkdetector/src/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../web_application/sharkdetector/src/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../web_application/sharkdetector/src/reportWebVitals.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../web_application/sharkdetector/src/setupTests.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yf-conversations-fiberv2/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yf-conversations-fiberv2/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yf-conversations-fiberv2/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yf-conversations-fiberv2/.idea/yf-conversations-fiberv2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yf-conversations-fiberv2/env_helper.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yf-conversations-fiberv2/file_utils.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yf-conversations-fiberv2/openai-sentiment-analysis" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yf-conversations-fiberv2/protocol.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yf-conversations-fiberv2/router.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yf-conversations-fiberv2/router_handler.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yf-conversations-fiberv2/server.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yf-conversations-fiberv2/twitter_handler.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yf-conversations-fiberv2/validator.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yf-conversations-fiberv2/yf_conversations_handler.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yf-conversations-fiberv2/yf_conversations_handler_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yf-conversations-scraper/.idea/yf-conversations-scraper.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yf-conversations-scraper/server.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SIWebScrapper/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SIWebScrapper/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../flask/hello-python" beforeDir="false" afterPath="$PROJECT_DIR$/../flask/hello-python" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../flink/quotemovement-monitoring/quotemovement-monitoring/src/main/java/org/sharkdetector/flink/QuoteMovementMonitoring.java" beforeDir="false" afterPath="$PROJECT_DIR$/../flink/quotemovement-monitoring/quotemovement-monitoring/src/main/java/org/sharkdetector/flink/QuoteMovementMonitoring.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../flink/quotemovement-monitoring/quotemovement-monitoring/src/main/java/org/sharkdetector/flink/function/FlatMapQuoteMovementFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/../flink/quotemovement-monitoring/quotemovement-monitoring/src/main/java/org/sharkdetector/flink/function/FlatMapQuoteMovementFunction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../flink/quotemovement-monitoring/quotemovement-monitoring/src/main/java/org/sharkdetector/flink/function/UpdatableQuoteMovementAlertFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/../flink/quotemovement-monitoring/quotemovement-monitoring/src/main/java/org/sharkdetector/flink/function/UpdatableQuoteMovementAlertFunction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../flink/quotemovement-monitoring/quotemovement-monitoring/src/main/java/org/sharkdetector/flink/schema/ThresholdDeserializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../flink/quotemovement-monitoring/quotemovement-monitoring/src/main/java/org/sharkdetector/flink/schema/ThresholdDeserializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../flink/quotemovement-monitoring/quotemovement-monitoring/src/main/java/org/sharkdetector/flink/util/Alert.java" beforeDir="false" afterPath="$PROJECT_DIR$/../flink/quotemovement-monitoring/quotemovement-monitoring/src/main/java/org/sharkdetector/flink/util/Alert.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../flink/quotemovement-monitoring/quotemovement-monitoring/target/classes/org/sharkdetector/flink/QuoteMovementMonitoring$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../flink/quotemovement-monitoring/quotemovement-monitoring/target/classes/org/sharkdetector/flink/QuoteMovementMonitoring$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../flink/quotemovement-monitoring/quotemovement-monitoring/target/classes/org/sharkdetector/flink/QuoteMovementMonitoring$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../flink/quotemovement-monitoring/quotemovement-monitoring/target/classes/org/sharkdetector/flink/QuoteMovementMonitoring$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../flink/quotemovement-monitoring/quotemovement-monitoring/target/classes/org/sharkdetector/flink/QuoteMovementMonitoring.class" beforeDir="false" afterPath="$PROJECT_DIR$/../flink/quotemovement-monitoring/quotemovement-monitoring/target/classes/org/sharkdetector/flink/QuoteMovementMonitoring.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../flink/quotemovement-monitoring/quotemovement-monitoring/target/classes/org/sharkdetector/flink/function/FlatMapQuoteMovementFunction.class" beforeDir="false" afterPath="$PROJECT_DIR$/../flink/quotemovement-monitoring/quotemovement-monitoring/target/classes/org/sharkdetector/flink/function/FlatMapQuoteMovementFunction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../flink/quotemovement-monitoring/quotemovement-monitoring/target/classes/org/sharkdetector/flink/function/UpdatableQuoteMovementAlertFunction$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../flink/quotemovement-monitoring/quotemovement-monitoring/target/classes/org/sharkdetector/flink/function/UpdatableQuoteMovementAlertFunction$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../flink/quotemovement-monitoring/quotemovement-monitoring/target/classes/org/sharkdetector/flink/function/UpdatableQuoteMovementAlertFunction.class" beforeDir="false" afterPath="$PROJECT_DIR$/../flink/quotemovement-monitoring/quotemovement-monitoring/target/classes/org/sharkdetector/flink/function/UpdatableQuoteMovementAlertFunction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../flink/quotemovement-monitoring/quotemovement-monitoring/target/classes/org/sharkdetector/flink/schema/ThresholdDeserializer$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../flink/quotemovement-monitoring/quotemovement-monitoring/target/classes/org/sharkdetector/flink/schema/ThresholdDeserializer$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../flink/quotemovement-monitoring/quotemovement-monitoring/target/classes/org/sharkdetector/flink/schema/ThresholdDeserializer.class" beforeDir="false" afterPath="$PROJECT_DIR$/../flink/quotemovement-monitoring/quotemovement-monitoring/target/classes/org/sharkdetector/flink/schema/ThresholdDeserializer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../flink/quotemovement-monitoring/quotemovement-monitoring/target/classes/org/sharkdetector/flink/util/Alert.class" beforeDir="false" afterPath="$PROJECT_DIR$/../flink/quotemovement-monitoring/quotemovement-monitoring/target/classes/org/sharkdetector/flink/util/Alert.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../flink/quotemovement-monitoring/quotemovement-monitoring/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../flink/quotemovement-monitoring/quotemovement-monitoring/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../flink/quotemovement-monitoring/quotemovement-monitoring/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../flink/quotemovement-monitoring/quotemovement-monitoring/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../flink/quotemovement-monitoring/quotemovement-monitoring/target/original-quotemovement-monitoring-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../flink/quotemovement-monitoring/quotemovement-monitoring/target/original-quotemovement-monitoring-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../flink/quotemovement-monitoring/quotemovement-monitoring/target/quotemovement-monitoring-1.0-SNAPSHOT-shaded.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../flink/quotemovement-monitoring/quotemovement-monitoring/target/quotemovement-monitoring-1.0-SNAPSHOT-shaded.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../flink/quotemovement-monitoring/quotemovement-monitoring/target/quotemovement-monitoring-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../flink/quotemovement-monitoring/quotemovement-monitoring/target/quotemovement-monitoring-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kubernetes/stack/influxdb-deployment.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../kubernetes/stack/influxdb-deployment.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kubernetes/stack/influxdb-service.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../kubernetes/stack/influxdb-service.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kubernetes/stack/miner-conf/config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../kubernetes/stack/miner-conf/config.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../thresholds_producer.py" beforeDir="false" afterPath="$PROJECT_DIR$/../thresholds_producer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled/.idea/untitled.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/.idea/jsLibraryMappings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/.idea/webapp.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/amqplib/.npmignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/amqplib/CHANGELOG.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/amqplib/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/amqplib/LICENSE-MIT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/amqplib/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/amqplib/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/amqplib/bin/generate-defs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/amqplib/callback_api.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/amqplib/channel_api.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/amqplib/examples/headers.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/amqplib/examples/receive_generator.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/amqplib/examples/send_generators.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/amqplib/examples/ssl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/amqplib/examples/tutorials/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/amqplib/examples/tutorials/callback_api/emit_log.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/amqplib/examples/tutorials/callback_api/emit_log_direct.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/amqplib/examples/tutorials/callback_api/emit_log_topic.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/amqplib/examples/tutorials/callback_api/new_task.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/amqplib/examples/tutorials/callback_api/receive.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/amqplib/examples/tutorials/callback_api/receive_logs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/amqplib/examples/tutorials/callback_api/receive_logs_direct.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/amqplib/examples/tutorials/callback_api/receive_logs_topic.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/amqplib/examples/tutorials/callback_api/rpc_client.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/amqplib/examples/tutorials/callback_api/rpc_server.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/amqplib/examples/tutorials/callback_api/send.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/amqplib/examples/tutorials/callback_api/worker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/amqplib/examples/tutorials/emit_log.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/amqplib/examples/tutorials/emit_log_direct.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/amqplib/examples/tutorials/emit_log_topic.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/amqplib/examples/tutorials/new_task.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/amqplib/examples/tutorials/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/amqplib/examples/tutorials/receive.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/amqplib/examples/tutorials/receive_logs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/amqplib/examples/tutorials/receive_logs_direct.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/amqplib/examples/tutorials/receive_logs_topic.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/amqplib/examples/tutorials/rpc_client.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/amqplib/examples/tutorials/rpc_server.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/amqplib/examples/tutorials/send.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/amqplib/examples/tutorials/worker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/amqplib/examples/waitForConfirms.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/amqplib/lib/api_args.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/amqplib/lib/bitset.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/amqplib/lib/callback_model.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/amqplib/lib/channel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/amqplib/lib/channel_model.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/amqplib/lib/codec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/amqplib/lib/connect.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/amqplib/lib/connection.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/amqplib/lib/credentials.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/amqplib/lib/defs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/amqplib/lib/error.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/amqplib/lib/format.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/amqplib/lib/frame.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/amqplib/lib/heartbeat.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/amqplib/lib/mux.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/amqplib/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/amqplib/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/amqplib/test/bitset.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/amqplib/test/callback_api.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/amqplib/test/channel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/amqplib/test/channel_api.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/amqplib/test/codec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/amqplib/test/connect.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/amqplib/test/connection.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/amqplib/test/data.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/amqplib/test/frame.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/amqplib/test/mux.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/amqplib/test/util.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/bitsyntax/.travis.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/bitsyntax/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/bitsyntax/LICENSE-MIT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/bitsyntax/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/bitsyntax/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/bitsyntax/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/bitsyntax/lib/compile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/bitsyntax/lib/constructor.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/bitsyntax/lib/grammar.pegjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/bitsyntax/lib/interp.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/bitsyntax/lib/parse.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/bitsyntax/lib/parser.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/bitsyntax/lib/pattern.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/bitsyntax/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/bitsyntax/test/consing.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/bitsyntax/test/matching.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/bluebird/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/bluebird/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/bluebird/changelog.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/bluebird/js/browser/bluebird.core.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/bluebird/js/browser/bluebird.core.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/bluebird/js/browser/bluebird.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/bluebird/js/browser/bluebird.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/bluebird/js/release/any.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/bluebird/js/release/assert.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/bluebird/js/release/async.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/bluebird/js/release/bind.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/bluebird/js/release/bluebird.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/bluebird/js/release/call_get.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/bluebird/js/release/cancel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/bluebird/js/release/catch_filter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/bluebird/js/release/context.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/bluebird/js/release/debuggability.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/bluebird/js/release/direct_resolve.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/bluebird/js/release/each.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/bluebird/js/release/errors.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/bluebird/js/release/es5.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/bluebird/js/release/filter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/bluebird/js/release/finally.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/bluebird/js/release/generators.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/bluebird/js/release/join.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/bluebird/js/release/map.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/bluebird/js/release/method.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/bluebird/js/release/nodeback.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/bluebird/js/release/nodeify.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/bluebird/js/release/promise.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/bluebird/js/release/promise_array.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/bluebird/js/release/promisify.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/bluebird/js/release/props.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/bluebird/js/release/queue.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/bluebird/js/release/race.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/bluebird/js/release/reduce.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/bluebird/js/release/schedule.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/bluebird/js/release/settle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/bluebird/js/release/some.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/bluebird/js/release/synchronous_inspection.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/bluebird/js/release/thenables.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/bluebird/js/release/timers.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/bluebird/js/release/using.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/bluebird/js/release/util.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/bluebird/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/buffer-more-ints/.travis.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/buffer-more-ints/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/buffer-more-ints/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/buffer-more-ints/buffer-more-ints-tests.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/buffer-more-ints/buffer-more-ints.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/buffer-more-ints/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/buffer-more-ints/polyfill.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/core-util-is/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/core-util-is/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/core-util-is/float.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/core-util-is/lib/util.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/core-util-is/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/core-util-is/test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/debug/.coveralls.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/debug/.eslintrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/debug/.npmignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/debug/.travis.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/debug/CHANGELOG.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/debug/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/debug/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/debug/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/debug/component.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/debug/karma.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/debug/node.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/debug/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/debug/src/browser.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/debug/src/debug.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/debug/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/debug/src/inspector-log.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/debug/src/node.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/inherits/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/inherits/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/inherits/inherits.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/inherits/inherits_browser.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/inherits/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/isarray/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/isarray/build/build.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/isarray/component.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/isarray/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/isarray/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/ms/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/ms/license.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/ms/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/ms/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/querystringify/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/querystringify/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/querystringify/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/querystringify/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/readable-stream/.npmignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/readable-stream/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/readable-stream/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/readable-stream/duplex.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/readable-stream/float.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/readable-stream/lib/_stream_duplex.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/readable-stream/lib/_stream_passthrough.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/readable-stream/lib/_stream_readable.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/readable-stream/lib/_stream_transform.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/readable-stream/lib/_stream_writable.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/readable-stream/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/readable-stream/passthrough.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/readable-stream/readable.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/readable-stream/transform.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/readable-stream/writable.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/requires-port/.npmignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/requires-port/.travis.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/requires-port/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/requires-port/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/requires-port/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/requires-port/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/requires-port/test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/safe-buffer/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/safe-buffer/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/safe-buffer/index.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/safe-buffer/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/safe-buffer/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/string_decoder/.npmignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/string_decoder/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/string_decoder/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/string_decoder/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/string_decoder/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/url-parse/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/url-parse/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/url-parse/dist/url-parse.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/url-parse/dist/url-parse.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/url-parse/dist/url-parse.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/url-parse/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/node_modules/url-parse/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webapp/package.json" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+      </list>
+    </option>
+  </component>
+  <component name="GOROOT" path="C:\Go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="1pA3jCvQqwr9UMeRbSPJiPbYGsX" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="web.server" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\SharkDetector\src\SentimentAnalytic" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\SharkDetector\src\SentimentAnalytic\proto" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="go build server.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="SentimentAnalytic" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/server.go" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Build.go build server.go" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2b7ee922-6e06-40ab-9367-53654da7df96" name="Default Changelist" comment="" />
+      <created>1614612200073</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1614612200073</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="VgoProject">
+    <integration-enabled>true</integration-enabled>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="752" y="353" key="#Go_Modules" timestamp="1615464975001">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="752" y="353" key="#Go_Modules/0.0.1920.1040@0.0.1920.1040" timestamp="1615464975001" />
+    <state x="729" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1615416331411">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="729" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1615416331411" />
+    <state x="92" y="92" width="1736" height="856" key="DirDiffDialog" timestamp="1615470171859">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="DirDiffDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1615470171859" />
+    <state x="853" y="380" key="EnvironmentVariablesDialog" timestamp="1615464972899">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="853" y="380" key="EnvironmentVariablesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1615464972899" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1614686799871">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1614686799871" />
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1615416596406">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1615416596406" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1615416596406">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1615416596406" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1615416596406">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1615416596406" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1615416596406">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1615416596406" />
+    <state x="461" y="165" key="SettingsEditor" timestamp="1615469097297">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1615469097297" />
+    <state x="540" y="175" key="editAsTableFormatDialogDimension" timestamp="1615203883689">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="540" y="175" key="editAsTableFormatDialogDimension/0.0.1920.1040@0.0.1920.1040" timestamp="1615203883689" />
+    <state x="780" y="250" key="ftp.server.browser" timestamp="1615469095116">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="780" y="250" key="ftp.server.browser/0.0.1920.1040@0.0.1920.1040" timestamp="1615469095116" />
+  </component>
+</project>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="c581ee05-47d4-4dd0-9e80-94db37ba8fbb" name="192.168.1.123" url="http://192.168.1.123">
+        <fileTransfer rootFolder="/home/chiupc/SharkDetectorGo/SentimentAnalytic" host="192.168.1.123" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package sentiment_analytic;
+option go_package = "github.com/chiupc/sharkdetector/sentiment_analytic";
+import "google/protobuf/empty.proto";
+
+service SentimentAnalytic {
+    rpc AnalyzeSentiment(InputFile) returns (google.protobuf.Empty) {}
+}
+
+message InputFile{
+    string columnName = 1;
+    string fileName = 2;
+    bytes text = 3;
+}
