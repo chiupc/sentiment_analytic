@@ -1,7 +1,7 @@
 package client_handler
 
 import (
-	pb "github.com/chiupc/sentiment_analytic"
+	pb "github.com/chiupc/sentiment_analytic/sentiment_analytic"
 	"flag"
 	"github.com/sirupsen/logrus"
 	"golang.org/x/net/context"

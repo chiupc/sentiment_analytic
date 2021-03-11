@@ -16,7 +16,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	pb "github.com/sharkdetector/sentiment_analytic/sentiment_analytic"
+	pb "github.com/chiupc/sentiment_analytic/sentiment_analytic"
 )
 
 var (
