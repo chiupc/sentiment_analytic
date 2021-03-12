@@ -14,7 +14,7 @@ var (
 	serverAddr         = flag.String("server_addr", "localhost:8444", "The server address in the format of host:port")
 )
 
-func GetTextSentiments(client pb.SentimentAnalyticClient, fileName string, columnName string){
+func GetTextSentiments(client pb.SentimentAnalyticClient, fileName string, columnName string) error{
 	var text = func() []byte {
 		data, err := ioutil.ReadFile(fileName)
 		if err != nil {
@@ -31,7 +31,9 @@ func GetTextSentiments(client pb.SentimentAnalyticClient, fileName string, colum
 	_,err := client.AnalyzeSentiment(context.Background(),&in)
 	if err != nil {
 		logrus.Errorf(err.Error())
+		return err
 	}
+	return nil
 }
 
 func NewSentimentAnalyticGrpcClient() pb.SentimentAnalyticClient {
