@@ -33,7 +33,7 @@ func (s *sentimentAnalyticServer) AnalyzeSentiment(ctx context.Context, file *pb
 	logrus.Info("AnalyzeSentiment is triggered")
 	g := NewGoogleNLPApiHandler()
 	text := clean(file.Text)
-	ioutil.WriteFile(filepath.Join("data", file.FileName + "_processed.csv"), text, os.FileMode(666))
+	ioutil.WriteFile(filepath.Join(filepath.Join(os.Getenv("DATA_PATH"), file.FileName + "_processed.csv")), text, os.FileMode(666))
 	br := bytes.NewReader(text)
 	c := csv.NewReader(br)
 	lines, err := c.ReadAll()

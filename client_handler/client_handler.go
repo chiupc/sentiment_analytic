@@ -7,6 +7,8 @@ import (
 	"golang.org/x/net/context"
 	"google.golang.org/grpc"
 	"io/ioutil"
+	"os"
+	"path/filepath"
 	"strings"
 )
 
@@ -16,13 +18,14 @@ var (
 
 func GetTextSentiments(client pb.SentimentAnalyticClient, fileName string, columnName string) error{
 	var text = func() []byte {
-		data, err := ioutil.ReadFile(fileName)
+		data, err := ioutil.ReadFile(filepath.Join(os.Getenv("DATA_PATH"),fileName))
 		if err != nil {
 			panic(err)
 		}
 		return data
 	}()
-	splits := strings.Split(fileName,"_")
+
+	splits := strings.Split(fileName,".")
 	in := pb.InputFile{
 		ColumnName: columnName,
 		FileName:   splits[0],
@@ -37,6 +40,8 @@ func GetTextSentiments(client pb.SentimentAnalyticClient, fileName string, colum
 }
 
 func NewSentimentAnalyticGrpcClient() pb.SentimentAnalyticClient {
+	logrus.Info("Initializing new grpc client...")
+	logrus.Info(*serverAddr)
 	flag.Parse()
 	var opts []grpc.DialOption
 	opts = append(opts, grpc.WithInsecure())

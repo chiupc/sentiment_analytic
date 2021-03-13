@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="192.168.1.123" remoteFilesAllowedToDisappearOnAutoupload="false">
+  <component name="PublishConfigData" serverName="scaleway-dev1" remoteFilesAllowedToDisappearOnAutoupload="false">
     <serverData>
-      <paths name="192.168.1.123">
+      <paths name="scaleway-dev1">
         <serverdata>
           <mappings>
-            <mapping deploy="/" local="$PROJECT_DIR$" web="/" />
+            <mapping deploy="/SharkDetectorGo/SentimentAnalytic" local="$PROJECT_DIR$" web="/" />
           </mappings>
         </serverdata>
       </paths>

@@ -12,7 +12,7 @@ import (
 	"path/filepath"
 	"strings"
 	"testing"
-	"github.com/sharkdetector/sentiment_analytic/client_handler"
+	"github.com/chiupc/sentiment_analytic/client_handler"
 )
 
 //func clean(s []byte) string {
