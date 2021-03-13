@@ -1,12 +1,13 @@
 package client_handler
 
 import (
-	pb "github.com/chiupc/sentiment_analytic/sentiment_analytic"
 	"flag"
-	"github.com/sirupsen/logrus"
+	"fmt"
+	pb "github.com/chiupc/sentiment_analytic/sentiment_analytic"
 	"golang.org/x/net/context"
 	"google.golang.org/grpc"
 	"io/ioutil"
+	"log"
 	"os"
 	"path/filepath"
 	"strings"
@@ -33,15 +34,13 @@ func GetTextSentiments(client pb.SentimentAnalyticClient, fileName string, colum
 	}
 	_,err := client.AnalyzeSentiment(context.Background(),&in)
 	if err != nil {
-		logrus.Errorf(err.Error())
+		fmt.Errorf(err.Error())
 		return err
 	}
 	return nil
 }
 
 func NewSentimentAnalyticGrpcClient() pb.SentimentAnalyticClient {
-	logrus.Info("Initializing new grpc client...")
-	logrus.Info(*serverAddr)
 	flag.Parse()
 	var opts []grpc.DialOption
 	opts = append(opts, grpc.WithInsecure())
@@ -49,7 +48,7 @@ func NewSentimentAnalyticGrpcClient() pb.SentimentAnalyticClient {
 	opts = append(opts, grpc.WithBlock())
 	conn, err := grpc.Dial(*serverAddr, opts...)
 	if err != nil {
-		logrus.Fatalf("fail to dial: %v", err)
+		log.Fatalf("fail to dial: %v", err)
 	}
 	//defer conn.Close()
 	client := pb.NewSentimentAnalyticClient(conn)

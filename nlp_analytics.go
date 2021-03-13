@@ -44,6 +44,7 @@ func NewGoogleNLPApiHandler() *GoogleNLPApiHandler {
 	}
 	var err error
 	//gah.GoogleApiClient, err = language.NewClient(context.Background(), option.WithCredentialsJSON(GoogleCredentialsJSON), option.WithHTTPClient(gah.NetClient))
+
 	gah.GoogleApiClient, err = language.NewClient(context.Background(), option.WithCredentialsJSON(GoogleCredentialsJSON()))
 	if err != nil {
 		log.Fatalf("Failed to create client: %v", err)
