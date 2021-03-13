@@ -26,8 +26,9 @@ func GetTextSentiments(client pb.SentimentAnalyticClient, fileName string, colum
 		}
 		return data
 	}()
-
+	fmt.Println(string(text))
 	splits := strings.Split(fileName,".")
+	fmt.Println(splits[0])
 	in := pb.InputFile{
 		ColumnName: columnName,
 		FileName:   splits[0],
