@@ -4,6 +4,7 @@ import (
 	"flag"
 	"fmt"
 	pb "github.com/chiupc/sentiment_analytic/sentiment_analytic"
+	"github.com/sirupsen/logrus"
 	"golang.org/x/net/context"
 	"google.golang.org/grpc"
 	"io/ioutil"
@@ -19,13 +20,11 @@ var (
 
 func GetTextSentiments(client pb.SentimentAnalyticClient, fileName string, columnName string) error{
 	fmt.Println("Running GetTextSentiments")
-	var text = func() []byte {
-		data, err := ioutil.ReadFile(filepath.Join(os.Getenv("DATA_PATH"),fileName))
-		if err != nil {
-			panic(err)
-		}
-		return data
-	}()
+	text, err := ioutil.ReadFile(filepath.Join(os.Getenv("DATA_PATH"),fileName))
+	if err != nil{
+		logrus.Info(err.Error())
+		return err
+	}
 	fmt.Println(string(text))
 	splits := strings.Split(fileName,".")
 	fmt.Println(splits[0])
@@ -34,7 +33,7 @@ func GetTextSentiments(client pb.SentimentAnalyticClient, fileName string, colum
 		FileName:   splits[0],
 		Text:       text,
 	}
-	_,err := client.AnalyzeSentiment(context.Background(),&in)
+	_, err = client.AnalyzeSentiment(context.Background(),&in)
 	if err != nil {
 		fmt.Errorf(err.Error())
 		return err
