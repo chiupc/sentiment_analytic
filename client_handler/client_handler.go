@@ -19,6 +19,7 @@ var (
 
 func GetTextSentiments(client pb.SentimentAnalyticClient, fileName string, columnName string) error{
 	fmt.Println("Running GetTextSentiments")
+	fmt.Println(filepath.Join(os.Getenv("DATA_PATH"),fileName + ".csv"))
 	text, err := ioutil.ReadFile(filepath.Join(os.Getenv("DATA_PATH"),fileName + ".csv"))
 	if err != nil{
 		return err
