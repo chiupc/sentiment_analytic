@@ -30,7 +30,7 @@ type sentimentAnalyticServer struct {
 
 func (s *sentimentAnalyticServer) AnalyzeSentiment(ctx context.Context, file *pb.InputFile) (*emptypb.Empty, error) {
 	//TODO - Process before
-	logrus.Info("AnalyzeSentiment is triggered")
+	fmt.Println("AnalyzeSentiment is triggered")
 	g := NewGoogleNLPApiHandler()
 	text := clean(file.Text)
 	ioutil.WriteFile(filepath.Join(filepath.Join(os.Getenv("DATA_PATH"), file.FileName + "_processed.csv")), text, os.FileMode(666))
