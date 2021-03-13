@@ -41,6 +41,10 @@ func GetTextSentiments(client pb.SentimentAnalyticClient, fileName string, colum
 	return nil
 }
 
+func PrintSomething(){
+	fmt.Println("test")
+}
+
 func NewSentimentAnalyticGrpcClient() pb.SentimentAnalyticClient {
 	flag.Parse()
 	var opts []grpc.DialOption
