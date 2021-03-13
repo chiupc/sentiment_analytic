@@ -23,7 +23,6 @@ var (
 	port       = flag.Int("port", 8444, "The server port")
 )
 
-
 type sentimentAnalyticServer struct {
 	pb.UnimplementedSentimentAnalyticServer
 }
@@ -47,7 +46,7 @@ func (s *sentimentAnalyticServer) AnalyzeSentiment(ctx context.Context, file *pb
 		logrus.Error(err.Error())
 		return nil, err
 	}
-	f, err := os.OpenFile(filepath.Join("data", file.FileName + "_processed.csv"), os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0644)
+	f, err := os.OpenFile(filepath.Join(os.Getenv("DATA_PATH"), file.FileName + "_processed.csv"), os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0644)
 	defer f.Close()
 	//write header
 	lines[0] = append(lines[0],"score")
