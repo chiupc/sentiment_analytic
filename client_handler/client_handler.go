@@ -18,6 +18,7 @@ var (
 )
 
 func GetTextSentiments(client pb.SentimentAnalyticClient, fileName string, columnName string) error{
+	fmt.Println("Running GetTextSentiments")
 	var text = func() []byte {
 		data, err := ioutil.ReadFile(filepath.Join(os.Getenv("DATA_PATH"),fileName))
 		if err != nil {
