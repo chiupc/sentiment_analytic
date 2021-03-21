@@ -61,11 +61,11 @@ func NewSentimentAnalyticGrpcClient() pb.SentimentAnalyticClient {
 	//flag.Parse()
 	var serverAddr string
 	if os.Getenv("ENVIRONMENT") == "DEV"{
-		serverAddr = fmt.Sprintf("%s:%d","localhost",os.Getenv("GRPC_SENTIMENTANALYTIC_PORT"))
+		serverAddr = fmt.Sprintf("%s:%s","localhost",os.Getenv("GRPC_SENTIMENTANALYTIC_PORT"))
 	}else if os.Getenv("ENVIRONMENT") == "TEST"{
-		serverAddr = fmt.Sprintf("%s:%d",os.Getenv("GRPC_SENTIMENTANALYTIC_TEST_VIP"),os.Getenv("GRPC_SENTIMENTANALYTIC_PORT"))
+		serverAddr = fmt.Sprintf("%s:%s",os.Getenv("GRPC_SENTIMENTANALYTIC_TEST_VIP"),os.Getenv("GRPC_SENTIMENTANALYTIC_PORT"))
 	}else if os.Getenv("ENVIRONMENT") == "PROD"{
-		serverAddr = fmt.Sprintf("%s:%d",os.Getenv("GRPC_SENTIMENTANALYTIC_PROD_VIP"),os.Getenv("GRPC_SENTIMENTANALYTIC_PORT"))
+		serverAddr = fmt.Sprintf("%s:%s",os.Getenv("GRPC_SENTIMENTANALYTIC_PROD_VIP"),os.Getenv("GRPC_SENTIMENTANALYTIC_PORT"))
 	}
 	var opts []grpc.DialOption
 	opts = append(opts, grpc.WithInsecure())

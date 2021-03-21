@@ -777,12 +777,6 @@
       <change beforePath="$PROJECT_DIR$/../SIWebScrapper/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SIWebScrapper/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client_handler/client_handler.go" beforeDir="false" afterPath="$PROJECT_DIR$/client_handler/client_handler.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env_helper.go" beforeDir="false" afterPath="$PROJECT_DIR$/sentiment_analytic/env_helper.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nlp_analytics.go" beforeDir="false" afterPath="$PROJECT_DIR$/sentiment_analytic/nlp_analytics.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sentiment_analytic/sentiment_analytic.pb.go" beforeDir="false" afterPath="$PROJECT_DIR$/sentiment_analytic/sentiment_analytic.pb.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server.go" beforeDir="false" afterPath="$PROJECT_DIR$/server.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/text_processing.go" beforeDir="false" afterPath="$PROJECT_DIR$/sentiment_analytic/text_processing.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/text_processing_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/sentiment_analytic/text_processing_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../flask/hello-python" beforeDir="false" afterPath="$PROJECT_DIR$/../flask/hello-python" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../flink/quotemovement-monitoring/quotemovement-monitoring/src/main/java/org/sharkdetector/flink/QuoteMovementMonitoring.java" beforeDir="false" afterPath="$PROJECT_DIR$/../flink/quotemovement-monitoring/quotemovement-monitoring/src/main/java/org/sharkdetector/flink/QuoteMovementMonitoring.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../flink/quotemovement-monitoring/quotemovement-monitoring/src/main/java/org/sharkdetector/flink/function/FlatMapQuoteMovementFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/../flink/quotemovement-monitoring/quotemovement-monitoring/src/main/java/org/sharkdetector/flink/function/FlatMapQuoteMovementFunction.java" afterDir="false" />
