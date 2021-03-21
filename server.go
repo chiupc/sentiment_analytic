@@ -6,6 +6,8 @@ import (
 	"encoding/csv"
 	"flag"
 	"fmt"
+	"github.com/chiupc/sentiment_analytic/client_handler"
+	sa "github.com/chiupc/sentiment_analytic/sentiment_analytic"
 	"github.com/joho/godotenv"
 	"github.com/sirupsen/logrus"
 	"google.golang.org/grpc"
@@ -14,8 +16,6 @@ import (
 	"os"
 	"path/filepath"
 	"strings"
-	pb "github.com/chiupc/sentiment_analytic/sentiment_analytic"
-	"github.com/chiupc/sentiment_analytic/client_handler"
 )
 
 var (
@@ -23,15 +23,15 @@ var (
 )
 
 type sentimentAnalyticServer struct {
-	pb.UnimplementedSentimentAnalyticServer
+	sa.UnimplementedSentimentAnalyticServer
 }
 
-func (s *sentimentAnalyticServer) AnalyzeSentiment(ctx context.Context, file *pb.InputFile) (*pb.OutputFile, error) {
+func (s *sentimentAnalyticServer) AnalyzeSentiment(ctx context.Context, file *sa.InputFile) (*sa.OutputFile, error) {
 	//TODO - Process before
 	fmt.Println("AnalyzeSentiment is triggered")
-	if os.Getenv("SENTIMENT_ENGINE") == "GCP-NLP" {
-		g := NewGoogleNLPApiHandler()
-		text := clean(file.Text)
+	if file.AnalyzerEngine == "GCP-NLP" {
+		g := sa.NewGoogleNLPApiHandler()
+		text := sa.Clean(file.Text)
 		ioutil.WriteFile(filepath.Join(filepath.Join(os.Getenv("DATA_PATH"), file.FileName+"_processed.csv")), text, os.FileMode(666))
 		br := bytes.NewReader(text)
 		c := csv.NewReader(br)
@@ -60,10 +60,10 @@ func (s *sentimentAnalyticServer) AnalyzeSentiment(ctx context.Context, file *pb
 			f.WriteString(strings.Join(lines[i+1], ",") + "\n")
 		}
 
-		return &pb.OutputFile{Filename: file.FileName+"_processed.csv"}, nil
+		return &sa.OutputFile{Filename: file.FileName+"_processed.csv"}, nil
 	}else{ //else if os.Getenv("SENTIMENT_ENGINE") == "VADER"
 		pyGrpc := client_handler.NewPySentimentAnalyticGrpcClient()
-		out, err := pyGrpc.AnalyzeSentiment(context.Background(),&pb.InputFile{
+		out, err := pyGrpc.AnalyzeSentiment(context.Background(),&sa.InputFile{
 			ColumnName: file.ColumnName,
 			FileName:   file.FileName,
 			Text:       nil,
@@ -89,6 +89,6 @@ func main() {
 		logrus.Errorf("failed to listen: %v", err)
 	}
 	grpcServer := grpc.NewServer()
-	pb.RegisterSentimentAnalyticServer(grpcServer, newServer())
+	sa.RegisterSentimentAnalyticServer(grpcServer, newServer())
 	grpcServer.Serve(lis)
 }

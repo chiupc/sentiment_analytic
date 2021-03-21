@@ -1,10 +1,10 @@
-package main
+package sentiment_analytic
 
 import (
 	"io/ioutil"
 )
 
-func clean(s []byte) []byte {
+func Clean(s []byte) []byte {
 	j := 0
 	var quoteInd []int
 	for _, b := range s {

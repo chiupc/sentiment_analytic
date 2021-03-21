@@ -38,32 +38,23 @@ func GetTextSentiments(ctx context.Context, fileName string, columnName string, 
 		"func": "GetTextSentiments",
 	})
 	splits := strings.Split(fileName, ".")
-	if analyzerEngine == "GCP-NLP" {
-		client := NewSentimentAnalyticGrpcClient()
-		text, err := ioutil.ReadFile(filepath.Join(os.Getenv("DATA_PATH"), fileName+".csv"))
-		if err != nil {
-			return err
-		}
-
-		in := pb.InputFile{
-			ColumnName: columnName,
-			FileName:   splits[0],
-			Text:       text,
-		}
-		_, err = client.AnalyzeSentiment(context.Background(), &in)
-		if err != nil {
-			log.Error(err.Error())
-			return err
-		}
-		return nil
-	}else{
-		client := NewPySentimentAnalyticGrpcClient()
-		_, err := client.AnalyzeSentiment(context.Background(), &pb.InputFile{FileName: splits[0], ColumnName: "userText"})
-		if err != nil {
-			log.Error(err.Error())
-		}
+	client := NewSentimentAnalyticGrpcClient()
+	text, err := ioutil.ReadFile(filepath.Join(os.Getenv("DATA_PATH"), fileName+".csv"))
+	if err != nil {
 		return err
 	}
+
+	in := pb.InputFile{
+		ColumnName: columnName,
+		FileName:   splits[0],
+		Text:       text,
+	}
+	_, err = client.AnalyzeSentiment(ctx, &in)
+	if err != nil {
+		log.Error(err.Error())
+		return err
+	}
+	return nil
 }
 
 func NewSentimentAnalyticGrpcClient() pb.SentimentAnalyticClient {

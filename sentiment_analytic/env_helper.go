@@ -1,7 +1,7 @@
-package main
+package sentiment_analytic
 
 import (
-"os"
+	"os"
 "strconv"
 )
 

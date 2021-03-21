@@ -1,4 +1,4 @@
-package main
+package sentiment_analytic
 
 import (
 	"bytes"
@@ -8,15 +8,15 @@ import (
 	"crypto/sha256"
 	"encoding/csv"
 	"fmt"
+	"github.com/chiupc/sentiment_analytic/client_handler"
 	"io/ioutil"
 	"os"
 	"path/filepath"
 	"strings"
 	"testing"
-	"github.com/chiupc/sentiment_analytic/client_handler"
 )
 
-//func clean(s []byte) string {
+//func Clean(s []byte) string {
 //	j := 0
 //	for _, b := range s {
 //		if ('a' <= b && b <= 'z') ||
@@ -36,7 +36,7 @@ func TestPeterSO(b *testing.T) {
 	//for N := 0; N < b.N; N++ {
 	//b.StopTimer()
 	//b.StartTimer()
-	cleaned := clean(strShakespeare)
+	cleaned := Clean(strShakespeare)
 	ioutil.WriteFile(`NIO_cleaned.csv`, cleaned, os.FileMode(666))
 	//}
 }
@@ -63,7 +63,7 @@ var strShakespeareCleaned = func() []byte {
 
 func TestAnalyzeSentiment(t *testing.T) {
 	g := NewGoogleNLPApiHandler()
-	text := clean(strShakespeare)
+	text := Clean(strShakespeare)
 	//ioutil.WriteFile(`NIO_cleaned.csv`, text, os.FileMode(666))
 	br := bytes.NewReader(text)
 	//f, _ := os.Open(`NIO_cleaned.csv`)
@@ -95,8 +95,7 @@ func TestAnalyzeSentiment(t *testing.T) {
 }
 
 func TestGetTextSentiments(t *testing.T){
-	client := client_handler.NewSentimentAnalyticGrpcClient()
-	client_handler.GetTextSentiments(context.Background(), client, "NIO_raw.csv","userText")
+	client_handler.GetTextSentiments(context.Background(), "NIO_raw.csv","userText","VADER")
 }
 
 func TestFileCheckSum(t *testing.T){

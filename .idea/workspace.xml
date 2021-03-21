@@ -776,6 +776,13 @@
       <change afterPath="$PROJECT_DIR$/../yf-conversations-scraper/server.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SIWebScrapper/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SIWebScrapper/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client_handler/client_handler.go" beforeDir="false" afterPath="$PROJECT_DIR$/client_handler/client_handler.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/env_helper.go" beforeDir="false" afterPath="$PROJECT_DIR$/sentiment_analytic/env_helper.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nlp_analytics.go" beforeDir="false" afterPath="$PROJECT_DIR$/sentiment_analytic/nlp_analytics.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sentiment_analytic/sentiment_analytic.pb.go" beforeDir="false" afterPath="$PROJECT_DIR$/sentiment_analytic/sentiment_analytic.pb.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.go" beforeDir="false" afterPath="$PROJECT_DIR$/server.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/text_processing.go" beforeDir="false" afterPath="$PROJECT_DIR$/sentiment_analytic/text_processing.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/text_processing_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/sentiment_analytic/text_processing_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../flask/hello-python" beforeDir="false" afterPath="$PROJECT_DIR$/../flask/hello-python" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../flink/quotemovement-monitoring/quotemovement-monitoring/src/main/java/org/sharkdetector/flink/QuoteMovementMonitoring.java" beforeDir="false" afterPath="$PROJECT_DIR$/../flink/quotemovement-monitoring/quotemovement-monitoring/src/main/java/org/sharkdetector/flink/QuoteMovementMonitoring.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../flink/quotemovement-monitoring/quotemovement-monitoring/src/main/java/org/sharkdetector/flink/function/FlatMapQuoteMovementFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/../flink/quotemovement-monitoring/quotemovement-monitoring/src/main/java/org/sharkdetector/flink/function/FlatMapQuoteMovementFunction.java" afterDir="false" />
@@ -1065,11 +1072,12 @@
     <property name="settings.editor.selected.configurable" value="web.server" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\SharkDetector\src\SentimentAnalytic\sentiment_analytic" />
+      <recent name="D:\SharkDetector\src\SentimentAnalytic\proto" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\SharkDetector\src\SentimentAnalytic" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\SharkDetector\src\SentimentAnalytic\proto" />
     </key>
   </component>
   <component name="RunManager">
@@ -1158,22 +1166,22 @@
     </state>
     <state x="592" y="218" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1615614012422" />
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1616313210076" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1615416596406">
+    <state width="938" height="282" key="GridCell.Tab.0.bottom" timestamp="1616314580695">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1615416596406" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1615416596406">
+    <state width="938" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1616314580695" />
+    <state width="938" height="282" key="GridCell.Tab.0.center" timestamp="1616314580694">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1615416596406" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1615416596406">
+    <state width="938" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1616314580694" />
+    <state width="938" height="282" key="GridCell.Tab.0.left" timestamp="1616314580694">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1615416596406" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1615416596406">
+    <state width="938" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1616314580694" />
+    <state width="938" height="282" key="GridCell.Tab.0.right" timestamp="1616314580694">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1615416596406" />
+    <state width="938" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1616314580694" />
     <state x="369" y="115" key="SettingsEditor" timestamp="1615620728074">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

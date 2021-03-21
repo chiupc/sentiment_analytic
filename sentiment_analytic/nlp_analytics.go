@@ -1,4 +1,4 @@
-package main
+package sentiment_analytic
 
 import (
 	language "cloud.google.com/go/language/apiv1"
