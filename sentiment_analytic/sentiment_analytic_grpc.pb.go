@@ -7,7 +7,6 @@ import (
 	grpc "google.golang.org/grpc"
 	codes "google.golang.org/grpc/codes"
 	status "google.golang.org/grpc/status"
-	emptypb "google.golang.org/protobuf/types/known/emptypb"
 )
 
 // This is a compile-time assertion to ensure that this generated file
@@ -19,7 +18,7 @@ const _ = grpc.SupportPackageIsVersion7
 //
 // For semantics around ctx use and closing/ending streaming RPCs, please refer to https://pkg.go.dev/google.golang.org/grpc/?tab=doc#ClientConn.NewStream.
 type SentimentAnalyticClient interface {
-	AnalyzeSentiment(ctx context.Context, in *InputFile, opts ...grpc.CallOption) (*emptypb.Empty, error)
+	AnalyzeSentiment(ctx context.Context, in *InputFile, opts ...grpc.CallOption) (*OutputFile, error)
 }
 
 type sentimentAnalyticClient struct {
@@ -30,9 +29,9 @@ func NewSentimentAnalyticClient(cc grpc.ClientConnInterface) SentimentAnalyticCl
 	return &sentimentAnalyticClient{cc}
 }
 
-func (c *sentimentAnalyticClient) AnalyzeSentiment(ctx context.Context, in *InputFile, opts ...grpc.CallOption) (*emptypb.Empty, error) {
-	out := new(emptypb.Empty)
-	err := c.cc.Invoke(ctx, "/sentiment_analytic.SentimentAnalytic/AnalyzeSentiment", in, out, opts...)
+func (c *sentimentAnalyticClient) AnalyzeSentiment(ctx context.Context, in *InputFile, opts ...grpc.CallOption) (*OutputFile, error) {
+	out := new(OutputFile)
+	err := c.cc.Invoke(ctx, "/SentimentAnalytic.SentimentAnalytic/AnalyzeSentiment", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -43,7 +42,7 @@ func (c *sentimentAnalyticClient) AnalyzeSentiment(ctx context.Context, in *Inpu
 // All implementations must embed UnimplementedSentimentAnalyticServer
 // for forward compatibility
 type SentimentAnalyticServer interface {
-	AnalyzeSentiment(context.Context, *InputFile) (*emptypb.Empty, error)
+	AnalyzeSentiment(context.Context, *InputFile) (*OutputFile, error)
 	mustEmbedUnimplementedSentimentAnalyticServer()
 }
 
@@ -51,7 +50,7 @@ type SentimentAnalyticServer interface {
 type UnimplementedSentimentAnalyticServer struct {
 }
 
-func (UnimplementedSentimentAnalyticServer) AnalyzeSentiment(context.Context, *InputFile) (*emptypb.Empty, error) {
+func (UnimplementedSentimentAnalyticServer) AnalyzeSentiment(context.Context, *InputFile) (*OutputFile, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method AnalyzeSentiment not implemented")
 }
 func (UnimplementedSentimentAnalyticServer) mustEmbedUnimplementedSentimentAnalyticServer() {}
@@ -77,7 +76,7 @@ func _SentimentAnalytic_AnalyzeSentiment_Handler(srv interface{}, ctx context.Co
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/sentiment_analytic.SentimentAnalytic/AnalyzeSentiment",
+		FullMethod: "/SentimentAnalytic.SentimentAnalytic/AnalyzeSentiment",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(SentimentAnalyticServer).AnalyzeSentiment(ctx, req.(*InputFile))
@@ -89,7 +88,7 @@ func _SentimentAnalytic_AnalyzeSentiment_Handler(srv interface{}, ctx context.Co
 // It's only intended for direct use with grpc.RegisterService,
 // and not to be introspected or modified (even as a copy)
 var SentimentAnalytic_ServiceDesc = grpc.ServiceDesc{
-	ServiceName: "sentiment_analytic.SentimentAnalytic",
+	ServiceName: "SentimentAnalytic.SentimentAnalytic",
 	HandlerType: (*SentimentAnalyticServer)(nil),
 	Methods: []grpc.MethodDesc{
 		{

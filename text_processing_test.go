@@ -2,6 +2,7 @@ package main
 
 import (
 	"bytes"
+	"context"
 	"crypto/md5"
 	"crypto/sha1"
 	"crypto/sha256"
@@ -95,7 +96,7 @@ func TestAnalyzeSentiment(t *testing.T) {
 
 func TestGetTextSentiments(t *testing.T){
 	client := client_handler.NewSentimentAnalyticGrpcClient()
-	client_handler.GetTextSentiments(client, "NIO_raw.csv","userText")
+	client_handler.GetTextSentiments(context.Background(), client, "NIO_raw.csv","userText")
 }
 
 func TestFileCheckSum(t *testing.T){
