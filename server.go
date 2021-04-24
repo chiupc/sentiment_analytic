@@ -29,10 +29,10 @@ type sentimentAnalyticServer struct {
 func (s *sentimentAnalyticServer) AnalyzeSentiment(ctx context.Context, file *sa.InputFile) (*sa.OutputFile, error) {
 	//TODO - Process before
 	fmt.Println("AnalyzeSentiment is triggered")
+	text := sa.Clean(file.Text)
+	ioutil.WriteFile(filepath.Join(filepath.Join(os.Getenv("DATA_PATH"), file.FileName+"_processed.csv")), text, os.FileMode(666))
 	if file.AnalyzerEngine == "GCP-NLP" {
 		g := sa.NewGoogleNLPApiHandler()
-		text := sa.Clean(file.Text)
-		ioutil.WriteFile(filepath.Join(filepath.Join(os.Getenv("DATA_PATH"), file.FileName+"_processed.csv")), text, os.FileMode(666))
 		br := bytes.NewReader(text)
 		c := csv.NewReader(br)
 		lines, err := c.ReadAll()
@@ -59,7 +59,6 @@ func (s *sentimentAnalyticServer) AnalyzeSentiment(ctx context.Context, file *sa
 			lines[i+1] = append(lines[i+1], sentiment)
 			f.WriteString(strings.Join(lines[i+1], ",") + "\n")
 		}
-
 		return &sa.OutputFile{Filename: file.FileName+"_processed.csv"}, nil
 	}else{ //else if os.Getenv("SENTIMENT_ENGINE") == "VADER"
 		pyGrpc := client_handler.NewPySentimentAnalyticGrpcClient()
@@ -82,9 +81,24 @@ func newServer() *sentimentAnalyticServer {
 }
 
 func main() {
-	godotenv.Load(".env")
-	flag.Parse()
-	lis, err := net.Listen("tcp", fmt.Sprintf("localhost:%d", *port))
+
+	f, err := os.OpenFile("app.log", os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0644)
+	if err != nil{
+		panic(err)
+	}
+	logrus.SetOutput(f)
+
+	if _, err := os.Stat(".env"); !os.IsNotExist(err) {
+		godotenv.Load(".env")
+		flag.Parse()
+	}
+	//hostName, err := os.Hostname()
+	//if err != nil {
+	//	panic(err)
+	//}
+
+	//lis, err := net.Listen("tcp", fmt.Sprintf("%s:%d", hostName, *port))
+	lis, err := net.Listen("tcp", fmt.Sprintf(":%d", *port))
 	if err != nil {
 		logrus.Errorf("failed to listen: %v", err)
 	}

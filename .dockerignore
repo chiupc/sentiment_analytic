@@ -1,0 +1,4 @@
+*.csv
+*_test.go
+.env
+*.json

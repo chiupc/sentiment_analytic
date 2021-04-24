@@ -16,22 +16,6 @@ import (
 	"testing"
 )
 
-//func Clean(s []byte) string {
-//	j := 0
-//	for _, b := range s {
-//		if ('a' <= b && b <= 'z') ||
-//			('A' <= b && b <= 'Z') ||
-//			('0' <= b && b <= '9') ||
-//			b == ' ' {
-//			s[j] = b
-//			j++
-//		} else {
-//			fmt.Print(b)
-//		}
-//	}
-//	return string(s[:j])
-//}
-
 func TestPeterSO(b *testing.T) {
 	//for N := 0; N < b.N; N++ {
 	//b.StopTimer()
