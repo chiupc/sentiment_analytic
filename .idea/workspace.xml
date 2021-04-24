@@ -27,11 +27,15 @@
       <change afterPath="$PROJECT_DIR$/../SentimentAnalyticPy/.idea/modules.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../SentimentAnalyticPy/.idea/other.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../SentimentAnalyticPy/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SentimentAnalyticPy/.ipynb_checkpoints/SentimentAnalysisNotebook-checkpoint.ipynb" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../SentimentAnalyticPy/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SentimentAnalyticPy/protos/helloworld.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SentimentAnalyticPy/SentimentAnalysisNotebook.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SentimentAnalyticPy/data/NIO-sample1.csv" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../SentimentAnalyticPy/protos/sentiment_analytic.proto" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../SentimentAnalyticPy/requirements.txt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../SentimentAnalyticPy/sentiment_analytic.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SentimentAnalyticPy/sentiment_analytic_pb2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SentimentAnalyticPy/sentiment_analytic_pb2_grpc.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../SentimentAnalyticPy/sentiment_analytic_server.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../SentimentAnalyticPy/venv/Lib/site-packages/_distutils_hack/__init__.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../SentimentAnalyticPy/venv/Lib/site-packages/_distutils_hack/override.py" afterDir="false" />
@@ -971,7 +975,7 @@
       <change afterPath="$PROJECT_DIR$/../yf-conversations-scraper/server.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SIWebScrapper/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SIWebScrapper/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client_handler/client_handler.go" beforeDir="false" afterPath="$PROJECT_DIR$/client_handler/client_handler.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sentiment_analytic/sentiment_analytic.pb.go" beforeDir="false" afterPath="$PROJECT_DIR$/sentiment_analytic/sentiment_analytic.pb.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../flask/hello-python" beforeDir="false" afterPath="$PROJECT_DIR$/../flask/hello-python" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../flink/quotemovement-monitoring/quotemovement-monitoring/src/main/java/org/sharkdetector/flink/QuoteMovementMonitoring.java" beforeDir="false" afterPath="$PROJECT_DIR$/../flink/quotemovement-monitoring/quotemovement-monitoring/src/main/java/org/sharkdetector/flink/QuoteMovementMonitoring.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../flink/quotemovement-monitoring/quotemovement-monitoring/src/main/java/org/sharkdetector/flink/function/FlatMapQuoteMovementFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/../flink/quotemovement-monitoring/quotemovement-monitoring/src/main/java/org/sharkdetector/flink/function/FlatMapQuoteMovementFunction.java" afterDir="false" />
@@ -1261,13 +1265,13 @@
     <property name="settings.editor.selected.configurable" value="web.server" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\SharkDetector\src\SentimentAnalytic\sentiment_analytic" />
-      <recent name="D:\SharkDetector\src\SentimentAnalytic\proto" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\SharkDetector\src\SentimentAnalytic\sentiment_analytic" />
       <recent name="D:\SharkDetector\src\SentimentAnalytic" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\SharkDetector\src\SentimentAnalytic\sentiment_analytic" />
+      <recent name="D:\SharkDetector\src\SentimentAnalytic\proto" />
     </key>
   </component>
   <component name="RunManager">
