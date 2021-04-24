@@ -19,9 +19,6 @@
     <list default="true" id="2b7ee922-6e06-40ab-9367-53654da7df96" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/../../desktop.ini" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../protos/sentiment_analytic.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.dockerignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app.log" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../SentimentAnalyticPy/.env" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../SentimentAnalyticPy/.idea/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../SentimentAnalyticPy/.idea/SentimentAnalyticPy.iml" afterDir="false" />
@@ -973,12 +970,8 @@
       <change afterPath="$PROJECT_DIR$/../yf-conversations-scraper/.idea/yf-conversations-scraper.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../yf-conversations-scraper/server.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SIWebScrapper/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SIWebScrapper/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SentimentAnalytic.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sentiment_analytic/text_processing_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/sentiment_analytic/text_processing_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server.go" beforeDir="false" afterPath="$PROJECT_DIR$/server.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client_handler/client_handler.go" beforeDir="false" afterPath="$PROJECT_DIR$/client_handler/client_handler.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../flask/hello-python" beforeDir="false" afterPath="$PROJECT_DIR$/../flask/hello-python" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../flink/quotemovement-monitoring/quotemovement-monitoring/src/main/java/org/sharkdetector/flink/QuoteMovementMonitoring.java" beforeDir="false" afterPath="$PROJECT_DIR$/../flink/quotemovement-monitoring/quotemovement-monitoring/src/main/java/org/sharkdetector/flink/QuoteMovementMonitoring.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../flink/quotemovement-monitoring/quotemovement-monitoring/src/main/java/org/sharkdetector/flink/function/FlatMapQuoteMovementFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/../flink/quotemovement-monitoring/quotemovement-monitoring/src/main/java/org/sharkdetector/flink/function/FlatMapQuoteMovementFunction.java" afterDir="false" />

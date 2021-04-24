@@ -92,7 +92,7 @@ func NewPySentimentAnalyticGrpcClient() pb.SentimentAnalyticClient {
 	}else if os.Getenv("ENVIRONMENT") == "TEST"{
 		serverAddr = fmt.Sprintf("%s:%s",os.Getenv("PY_GRPC_SENTIMENTANALYTIC_TEST_VIP"),os.Getenv("PY_GRPC_SENTIMENTANALYTIC_PORT"))
 	}else if os.Getenv("ENVIRONMENT") == "PROD"{
-		serverAddr = fmt.Sprintf("%s:%d",os.Getenv("PY_GRPC_SENTIMENTANALYTIC_PROD_VIP"),os.Getenv("PY_GRPC_SENTIMENTANALYTIC_PORT"))
+		serverAddr = fmt.Sprintf("%s:%s",os.Getenv("PY_GRPC_SENTIMENTANALYTIC_PROD_VIP"),os.Getenv("PY_GRPC_SENTIMENTANALYTIC_PORT"))
 	}
 	log.Infof("Grpc server = %s", serverAddr)
 	var opts []grpc.DialOption
