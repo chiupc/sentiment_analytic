@@ -32,7 +32,7 @@ func init(){
 	}
 }
 
-func GetTextSentiments(ctx context.Context, fileName string, columnName string, analyzerEngine string) error{
+func GetTextSentiments(ctx context.Context, fileName string, columnName string, analyzerEngine string) (*pb.OutputFile, error){
 	log := logger.WithFields(logrus.Fields{
 		"ctx-id": ctx.Value("ctx-id"),
 		"func": "GetTextSentiments",
@@ -41,7 +41,7 @@ func GetTextSentiments(ctx context.Context, fileName string, columnName string, 
 	client := NewSentimentAnalyticGrpcClient()
 	text, err := ioutil.ReadFile(filepath.Join(os.Getenv("DATA_PATH"), fileName+".csv"))
 	if err != nil {
-		return err
+		return nil, err
 	}
 
 	in := pb.InputFile{
@@ -49,12 +49,12 @@ func GetTextSentiments(ctx context.Context, fileName string, columnName string, 
 		FileName:   splits[0],
 		Text:       text,
 	}
-	_, err = client.AnalyzeSentiment(ctx, &in)
+	out, err := client.AnalyzeSentiment(ctx, &in)
 	if err != nil {
 		log.Error(err.Error())
-		return err
+		return nil, err
 	}
-	return nil
+	return out, nil
 }
 
 func NewSentimentAnalyticGrpcClient() pb.SentimentAnalyticClient {
